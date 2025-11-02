@@ -1,0 +1,132 @@
+    /* Reset and Box Model Setup */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f6f8fc;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #2a5298, #1e3c72);
+      color: white;
+      text-align: center;
+      padding: 70px 20px;
+      box-shadow: 0 3px 12px rgba(0, 0, 0, 0.25);
+    }
+
+    header h1 {
+      font-size: 2.6rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
+    main {
+      width: 90%;
+      max-width: 1100px;
+      margin: 50px auto;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 14px;
+      padding: 30px 25px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+      border-top: 6px solid #095ef0;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .card h2 {
+      color: #1e3c72;
+      margin-bottom: 12px;
+      font-size: 1.5rem;
+    }
+
+    .card p {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .icon {
+      font-size: 40px;
+      margin-bottom: 15px;
+      color: #2a5298;
+    }
+
+    .read-more {
+      display: inline-block;
+      padding: 10px 18px;
+      border-radius: 25px;
+      background: #2a5298;
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    .read-more:hover {
+      background: #1e3c72;
+      transform: scale(1.05);
+    }
+
+    footer {
+      background: #1e3c72;
+      color: #fff;
+      text-align: center;
+      padding: 30px 10px;
+      font-size: 0.9rem;
+      margin-top: 60px;
+      box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Media Queries for Responsiveness */
+    @media (max-width: 1024px) {
+      .services {
+        grid-template-columns: 1fr;
+        max-width: 700px;
+        margin: 0 auto;
+      }
+
+      .card {
+        margin-bottom: 20px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .card {
+        padding: 25px 20px;
+      }
+
+      .card h2 {
+        font-size: 1.3rem;
+      }
+
+      .read-more {
+        padding: 8px 14px;
+      }
+    }
